@@ -6,7 +6,6 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import lombok.Value;
-import lombok.val;
 
 import java.util.Locale;
 
@@ -21,9 +20,6 @@ public class DataGenerator {
             .log(LogDetail.ALL)
             .build();
     private static final Faker faker = new Faker(new Locale("en"));
-
-    private DataGenerator() {
-    }
 
     private static void sendRequest(RegistrationDto user) {
         // TODO: отправить запрос на указанный в требованиях path, передав в body запроса объект user

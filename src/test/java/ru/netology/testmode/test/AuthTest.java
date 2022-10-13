@@ -34,7 +34,6 @@ class AuthTest {
         $("[data-test-id='password'] input").setValue(registeredUser.getPassword());
         $("[data-test-id='action-login']").click();
         $(".heading").shouldHave(Condition.text(msgAccount));
-
     }
 
     @Test
